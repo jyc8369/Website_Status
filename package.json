@@ -1,0 +1,6 @@
+{
+  "name": "status-website",
+  "private": true,
+  "type": "module",
+  "dependencies": {}
+}

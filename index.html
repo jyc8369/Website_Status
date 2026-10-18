@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fbfcfb" />
+    <meta name="description" content="Live service status for status.jyc8369.dev." />
+    <title>Status — status.jyc8369.dev</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="/" aria-label="status.jyc8369.dev home">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span>status.jyc8369.dev</span>
+        </a>
+      </header>
+
+      <main>
+        <section id="summary" class="summary summary-loading" aria-live="polite" aria-atomic="true">
+          <span class="summary-icon" aria-hidden="true"><span class="summary-icon-core"></span></span>
+          <div class="summary-copy">
+            <h2 id="summary-title">Checking systems</h2>
+            <p id="summary-detail">Connecting to the latest status reports…</p>
+          </div>
+          <button id="refresh-button" class="refresh-button" type="button">
+            <svg class="refresh-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M16.4 8A6.7 6.7 0 0 0 4.7 5.3L3 7m0 0V3.8M3 7h3.2M3.6 12a6.7 6.7 0 0 0 11.7 2.7L17 13m0 0v3.2M17 13h-3.2" /></svg>
+            <span>Refresh</span>
+          </button>
+        </section>
+
+        <div class="section-heading">
+          <h1 id="page-title">Services</h1>
+          <p id="last-checked" class="last-checked">Waiting for first check</p>
+        </div>
+
+        <section id="device-list" class="device-list" aria-label="Device status">
+          <article class="device-card is-loading" data-device="proxy-server-1">
+            <div class="device-main">
+              <span class="device-symbol" aria-hidden="true">P1</span>
+              <div class="device-info"><h2>Proxy server 1</h2></div>
+              <span class="status-pill status-loading"><span class="status-dot"></span><span class="status-label">Checking</span></span>
+            </div>
+            <div class="device-metrics"><div class="metric"><span>CPU usage</span><strong class="cpu-value">—</strong></div><div class="metric"><span>Uptime</span><strong class="uptime-value">—</strong></div></div>
+          </article>
+
+          <article class="device-card is-loading" data-device="device-b">
+            <div class="device-main">
+              <span class="device-symbol" aria-hidden="true">B</span>
+              <div class="device-info"><h2>Device B</h2></div>
+              <span class="status-pill status-loading"><span class="status-dot"></span><span class="status-label">Checking</span></span>
+            </div>
+            <div class="device-metrics"><div class="metric"><span>CPU usage</span><strong class="cpu-value">—</strong></div><div class="metric"><span>Uptime</span><strong class="uptime-value">—</strong></div></div>
+          </article>
+
+          <article class="device-card is-loading" data-device="device-c">
+            <div class="device-main">
+              <span class="device-symbol" aria-hidden="true">C</span>
+              <div class="device-info"><h2>Device C</h2></div>
+              <span class="status-pill status-loading"><span class="status-dot"></span><span class="status-label">Checking</span></span>
+            </div>
+            <div class="device-metrics"><div class="metric"><span>CPU usage</span><strong class="cpu-value">—</strong></div><div class="metric"><span>Uptime</span><strong class="uptime-value">—</strong></div></div>
+          </article>
+        </section>
+
+      </main>
+
+    </div>
+  </body>
+</html>
