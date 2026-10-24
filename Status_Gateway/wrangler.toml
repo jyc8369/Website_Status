@@ -1,0 +1,12 @@
+name = "status-gateway"
+main = "src/index.js"
+compatibility_date = "2026-10-18"
+
+workers_dev = false
+preview_urls = false
+
+# Configure VPC service IDs in the ignored wrangler.local.toml file.
+[observability]
+enabled = true
+head_sampling_rate = 0.1
+redact_query_string = true

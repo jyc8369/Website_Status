@@ -1,0 +1,5 @@
+# Copy to wrangler.local.toml and set your Cloudflare VPC Service IDs.
+[[vpc_services]]
+binding = "MY_DEVICE"
+service_id = "replace-with-your-vpc-service-id"
+remote = true

@@ -1,1 +1,4 @@
 node_modules/
+Status_Gateway/.wrangler/
+Status_Gateway/wrangler.local.toml
+Status_Gateway/src/devices.local.js
